@@ -1,6 +1,5 @@
 
 //using arrow keys to move player 
-
 document.getElementById('player-image').style.position = "absolute";
 playerMovementSpeed = 5;
 document.onkeydown = detectKey;
