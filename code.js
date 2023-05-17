@@ -27,3 +27,21 @@ function detectKey(e) {
     }
     console.log(playerMovementSpeed, document.getElementById('player-image').style.top, document.getElementById('player-image').style.left)
 }
+function displayCharacterSpeech(speech){
+    let displaySpeech = '';
+    const displaySpeechArray = [];
+    
+    for(let i = 0; i < speech.length; i++){
+        displaySpeech = displaySpeech.concat(speech[i]);
+        displaySpeechArray.push(displaySpeech);
+        setTimeout (() => {
+            document.getElementById('speechbox').innerHTML = displaySpeechArray[i];
+        }, i * 75); 
+    
+}
+
+
+
+   
+}
+displayCharacterSpeech("~print out da message dude, this is for testing :)")
