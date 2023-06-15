@@ -13,5 +13,6 @@ function displayText(text){
 }
    
 
+const textArray = ["one day, joe mama said, <br><br> that poo is holy. <br><br>", "Then, Joe the green ate a moss and died.", "<br><br>Next, Sadfire grilled the toast of holiness, and ate it."]
 
-displayText("line 1 <br><br> line 2")
+displayText(textArray[0] + textArray[1] + textArray[2])
